@@ -1,0 +1,99 @@
+/* Fuente legible y tamaño adecuado */
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 1.1em;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+    margin: 2em;
+}
+
+/* Contraste suficiente para encabezados */
+h1, h2, h3 {
+    color: #1a237e;
+    font-weight: bold;
+}
+
+/* Enlaces accesibles */
+a {
+    color: #1565c0;
+    text-decoration: underline;
+}
+a:focus, a:hover {
+    outline: 2px solid #ffb300;
+    background-color: #fffde7;
+}
+
+/* Formularios accesibles */
+label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+input, textarea, button {
+    font-size: 1em;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+input:focus, textarea:focus, button:focus {
+    outline: 2px solid #43a047;
+    background-color: #e8f5e9;
+}
+
+/* Botón accesible */
+button {
+    background-color: #1565c0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    min-width: 120px;
+}
+button:hover, button:focus {
+    background-color: #07ce3c;
+}
+
+/* Listas y tablas */
+ul, ol {
+    margin-left: 2em;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+}
+th, td {
+    border: 1px solid #888;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+th {
+    background-color: #e3f2fd;
+    color: #1a237e;
+}
+
+/* Imágenes accesibles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Espaciado general */
+p, ul, ol, table, form {
+    margin-bottom: 1.5em;
+}
+
+/* Respetar el modo alto contraste del sistema */
+@media (prefers-contrast: more) {
+    body, h1, h2, h3, a, label, input, textarea, button, th, td {
+        background: #fff !important;
+        color: #000 !important;
+        border-color: #000 !important;
+    }
+}
